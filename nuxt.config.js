@@ -18,22 +18,45 @@ export default {
 
     ],
     link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }, {
-      rel: 'stylesheet',
-      href: "https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
-    }, ]
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }, {
+        rel: 'stylesheet',
+        href: "https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
+      },
+
+      {
+        rel: 'stylesheet',
+        href: 'https://daneden.github.io/animate.css/animate.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '~/assets/css/menu.css'
+      },
+
+    ],
+
+
+
+    script: [{
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+      },
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'
+      },
+    ],
+
+
   },
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: 'blue',
-    height: '5px'
+    color: "#000",
+    throttle: 0,
+    height: '2px',
   },
-
   /*
    ** Global CSS
    */
@@ -45,9 +68,15 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [{
-    src: '~/plugins/rellax',
-    ssr: false
-  }],
+      src: '~/plugins/rellax',
+      ssr: false
+    },
+    {
+      src: "~/plugins/aos",
+      ssr: false
+    }
+
+  ],
 
   /*
    ** Nuxt.js modules

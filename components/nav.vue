@@ -25,14 +25,17 @@
 export default {};
 </script>
 
+
+
 <style>
 header {
-  /* background: rgb(216, 60, 39); */
+  background: rgb(216, 60, 39);
   display: grid;
   grid-template-columns: repeat(2, auto);
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
+  z-index: 100;
 }
 
 .logo,
